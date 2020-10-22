@@ -47,3 +47,5 @@ func hitURL(url string, c chan<- requestResult) {
 	}
 	c <- requestResult{url: url, status: status}
 }
+
+//잔디확인용
