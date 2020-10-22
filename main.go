@@ -140,16 +140,48 @@ func main() {
 	// //fmt.Println(account.Balance(), account.Owner())
 	// fmt.Println(account)
 
-	dictionary := mydict.Dictionary{"first": "First word"}
-	definition, err := dictionary.Search("first")
+	// dictionary := mydict.Dictionary{"first": "First word"}
+	// definition, err := dictionary.Search("first")
+	// if err != nil {
+	// 	fmt.Println(err)
+	// } else {
+	// 	fmt.Println(definition)
+	// }
+
+	// dictionary := mydict.Dictionary{}
+	// word := "hello"
+	// definition := "Greeting"
+	// err := dictionary.Add(word, definition)
+	// if err != nil {
+	// 	fmt.Println(err)
+	// }
+	// hello, _ := dictionary.Search(word)
+	// fmt.Println("found", word, "definition:", hello)
+	// err2 := dictionary.Add(word, definition)
+	// if err2 != nil {
+	// 	fmt.Println(err2)
+	// }
+
+	//#2-6 update delete
+	dictionary := mydict.Dictionary{}
+	baseWord := "hello"
+	dictionary.Add(baseWord, "First")
+	//err := dictionary.Update(baseWord, "Second") //업데이트는 에러도 리턴
+	// if err != nil {
+	// 	fmt.Println(err)
+	// }
+	//word, _ := dictionary.Search(baseWord)
+	dictionary.Search(baseWord)
+	dictionary.Delete(baseWord)
+	word, err := dictionary.Search(baseWord)
 	if err != nil {
 		fmt.Println(err)
 	} else {
-		fmt.Println(definition)
+		fmt.Println(word)
 	}
-}
+	fmt.Println(word)
 
-//배태현
+}
 
 // func main1() {
 // 	runtime.GOMAXPROCS(runtime.NumCPU()) // CPU 개수를 구한 뒤 사용할 최대 CPU 개수 설정
