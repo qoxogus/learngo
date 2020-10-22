@@ -149,6 +149,8 @@ func main() {
 	}
 }
 
+//배태현
+
 // func main1() {
 // 	runtime.GOMAXPROCS(runtime.NumCPU()) // CPU 개수를 구한 뒤 사용할 최대 CPU 개수 설정
 
