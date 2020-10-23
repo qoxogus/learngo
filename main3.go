@@ -48,6 +48,7 @@ func hitURL(url string, c chan<- requestResult) {
 	c <- requestResult{url: url, status: status}
 }
 
+//qwerqwer
 //잔디확인용
 //1107
 //asdf
