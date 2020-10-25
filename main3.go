@@ -55,3 +55,5 @@ func hitURL(url string, c chan<- requestResult) {
 //잔디잔디잔디
 //김기홍바보
 //add
+//add 1025
+//잔디가 안돼
