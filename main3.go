@@ -57,3 +57,6 @@ func hitURL(url string, c chan<- requestResult) {
 //add
 //add 1025
 //잔디가 안돼
+//1
+//134
+//123123
